@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Prism.DependentViews.Module.Views.ViewA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock Text="{Binding Title}" FontSize="38" />
+            <Button Command="{Binding UpdateCommand}" Width="100" Content="Update" />
+        </StackPanel>
+    </Grid>
+</UserControl>

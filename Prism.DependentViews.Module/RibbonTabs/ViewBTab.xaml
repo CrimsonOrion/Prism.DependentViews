@@ -1,0 +1,7 @@
+﻿<RibbonTab x:Class="Prism.DependentViews.Module.RibbonTabs.ViewBTab"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Header="Home">
+    <RibbonGroup x:Name="GroupA" Header="GroupA">
+        <RibbonButton Command="{Binding UpdateCommand}" Label="Update ViewB" />
+    </RibbonGroup>
+</RibbonTab>

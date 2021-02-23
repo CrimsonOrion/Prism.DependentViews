@@ -1,0 +1,18 @@
+﻿<RibbonWindow x:Class="Prism.DependentViews.UI.Views.MainWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:prism="http://prismlibrary.com/"
+              prism:ViewModelLocator.AutoWireViewModel="True"
+              Height="300" Width="600" >
+    <StackPanel>
+        <Ribbon prism:RegionManager.RegionName="RibbonTabRegion" />
+        <DockPanel LastChildFill="True">
+            <StackPanel>
+                <Button Content="Navigate ViewA" Command="{Binding NavigateCommand}" CommandParameter="ViewA" />
+                <Button Content="Navigate ViewB" Command="{Binding NavigateCommand}" CommandParameter="ViewB" />
+                <ContentControl prism:RegionManager.RegionName="SubRegion" />
+            </StackPanel>
+            <ContentControl prism:RegionManager.RegionName="ContentRegion" Margin="1,3,3,3" />
+        </DockPanel>
+    </StackPanel>
+</RibbonWindow>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Prism.DependentViews.UI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prism.DependentViews.Core\Prism.DependentViews.Core.csproj" />
+    <ProjectReference Include="..\Prism.DependentViews.Module\Prism.DependentViews.Module.csproj" />
+  </ItemGroup>
+</Project>
